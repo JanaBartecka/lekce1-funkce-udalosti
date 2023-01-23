@@ -1,7 +1,10 @@
 // tady je místo pro náš program
 
-document.querySelector("#vysledek").innerHTML = secti(4, 5);
-
+function secteni() {
+  // document.querySelector("#vysledek").innerHTML = secti(2, 5);
+  let cislo = document.querySelector("#vysledek");
+cislo.innerHTML = secti(1, 5);
+}
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
  *
@@ -17,5 +20,16 @@ function secti(a, b) {
  * Upozorní uživatele při spuštění.
  */
 function upozorni() {
-  alert("Gratulace, právě jsi spustila tuto funkci!");
+  let myAlert="Gratulace, právě jsi spustila tuto funkci!"
+  let zmenatextu=document.querySelector('.ctverecek');
+  zmenatextu.textContent=myAlert
+  alert(myAlert);
+  console.log(myAlert)
 }
+
+function zmenBarvu() {
+  let zmenaBarvy=document.querySelector('.ctverecek')
+  zmenaBarvy.style.backgroundColor='green'
+}
+
+
